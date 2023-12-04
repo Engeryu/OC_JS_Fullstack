@@ -1,0 +1,339 @@
+$myFontall: "Roboto", sans-serif;
+$myFonthead: "Shrikhand";
+$myFirstColor: #9356dc;
+$myScdyColor: #ff79da;
+$myThrdyCcolor: #99e2d0;
+
+// --------------------------------------------------- Header ---------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $myFontall;
+}
+
+.fa-heart {
+  font-weight: normal;
+
+  &:hover {
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(40deg, #ff79da, #9356dc);
+  }
+}
+
+.lineH2 {
+  width: 90%;
+
+  .restoH2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+#logo {
+  width: 175px;
+  height: 50%;
+  align-items: center;
+  margin: auto;
+
+}
+.displayNone{
+  display: none;
+}
+
+#purpleButton {
+  width: 232px;
+  height: 50px;
+  border-radius: 36vw;
+  border: none;
+  background: linear-gradient(175deg, #ff79da, #9356dc);
+  margin: 0 auto 45px auto;
+
+  span {
+    font-weight: bold;
+    color: white;
+  }
+}
+
+body {
+
+  #resume,
+  #searchbar,
+  #explore,
+  #prepCom,
+  footer,
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .centerLogo{
+    justify-content: center;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 3px -4px 20px grey;
+    height: 62px;
+
+    #redirectHome {
+      display: inherit;
+      justify-content: flex-start;
+      color: inherit;
+      align-items: center;
+      text-decoration: inherit;
+      padding: 16px;
+    }
+  }
+
+
+  #resume {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 100%;
+
+    #search {
+      display: inherit;
+      flex-direction: row;
+      justify-content: center;
+      background-color: rgb(235, 235, 235);
+      gap: 10px;
+      height: 32px;
+      width: 100%;
+
+      i {
+        margin: auto 0;
+      }
+
+      #searchbar {
+        font-size: 20px;
+        resize: none;
+        background-color: transparent;
+        border: none;
+        font-family: $myFontall;
+        outline-color: black;
+
+        &::placeholder {
+          color: black;
+        }
+      }
+    }
+
+    #explore {
+      background-color: rgb(248, 248, 248);
+      text-align: center;
+      align-items: center;
+      gap: 10px;
+      padding-top: 36px;
+      width: 100%;
+
+      h2 {
+        width: 65vw;
+      }
+
+      >p {
+        width: 75vw;
+      }
+    }
+
+    #search {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+
+
+    .lineH2 {
+      display: inherit;
+      align-self: baseline;
+      margin-left: 7.5%;
+      padding: 60px 0 30px 0;
+    }
+
+    .columnH2 {
+      display: inherit;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      gap: 20px;
+      width: 90%;
+      padding-bottom: 60px;
+
+      button {
+        border-radius: 15px;
+        display: flex;
+        flex-basis: 90%;
+        height: 64px;
+        border: none;
+        box-shadow: 0px 2px 4px 3px rgb(240 240 240);
+        background-color: rgb(248, 248, 248);
+        gap: 10px;
+        align-items: center;
+        padding-left: 24px;
+        position: relative;
+
+        &:hover {
+          background-color: #ebdbff;
+
+          .fontAweFonct {
+            color: $myFirstColor;
+          }
+        }
+
+        .numberFonct {
+          background-color: $myFirstColor;
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          position: absolute;
+          left: -12px;
+
+          .fontColor {
+            color: white;
+            font-size: 16px;
+            margin: auto;
+          }
+        }
+
+        .fontAweFonct {
+          color: grey;
+        }
+
+        i::before {
+          font-size: 16px;
+        }
+
+        .fontWeight {
+          margin: auto;
+          margin-left: 30px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  #cardsMain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    padding: 60px 0;
+
+    .restoH2 {
+      margin-left: 7.5%;
+    }
+
+    .cardFlow {
+      display: inherit;
+      flex-flow: row wrap;
+      width: 90%;
+      margin: auto;
+      justify-content: center;
+      gap: 20px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        box-shadow: 2px 2px 2px rgb(216, 216, 216);
+        border-radius: 16px;
+        position: relative;
+        flex-basis: 95%;
+
+        .container {
+          text-decoration: none;
+          color: black;
+
+          figure {
+            img {
+              width: 100%;
+              height: 165px;
+              object-fit: cover;
+              object-position: bottom;
+              border-radius: 16px 16px 0 0;
+            }
+
+            #topPosition {
+              object-position: top;
+            }
+
+            .newSpan {
+              background-color: #99e2d0;
+              color: #206655;
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              padding: 7px;
+              font-size: 14px;
+            }
+
+            .content {
+              display: flex;
+              flex-direction: column;
+              padding: 10px;
+              gap: 5px;
+
+              h4 {
+                font-size: 18px;
+              }
+
+              h5 {
+                font-weight: normal;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    i {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+      font-size: 22px;
+    }
+  }
+
+  footer {
+    background-color: rgb(56, 55, 55);
+    color: white;
+    gap: 10px;
+    padding: 20px;
+
+    h2 {
+      font-family: $myFonthead;
+    }
+
+    ul {
+      gap: 5px;
+
+      .bolder {
+        .fa-handshake-angle::before {
+          font-size: 14px;
+        }
+      }
+
+      li {
+        font-weight: normal;
+        list-style-type: none;
+        display: flex;
+
+        &:first-of-type {
+          gap: 10px;
+        }
+
+        &:nth-of-type(2) {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}

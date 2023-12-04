@@ -1,0 +1,153 @@
+#illustration_page {
+    position: absolute;
+    top: 63px;
+    width: 100%;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .fa-arrow-left {
+        font-size: 24px;
+    }
+}
+
+.menuMain {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: rgb(244, 244, 244);
+    border-radius: 36px 36px 0 0;
+    gap: 40px;
+    margin-top: 250px;
+
+    #headerMain {
+        display: inherit;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+
+        h2 {
+            font-family: 'Shrikhand';
+            font-size: 28px;
+            font-weight: 400;
+            margin: 0 29px 0 0;
+            padding-left: 10px;
+        }
+
+        i {
+            margin: auto 2rem;
+        }
+    }
+
+    #menuHead {
+        display: inherit;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background-color: rgb(244, 244, 244);
+        border-radius: 36px 36px 0 0;
+        gap: 40px;
+
+    }
+
+    .menuParts {
+        display: inherit;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 20px;
+        width: 350px;
+
+        .fontNormal {
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        .fontNormal::after {
+            content: '';
+            display: block;
+            position: relative;
+            width: 29px;
+            border: 2px solid #99E2D0;
+            margin-top: 8px;
+        }
+
+        .menuDishes {
+            display: inherit;
+            gap: 15px;
+            margin: 0 auto;
+
+            .presentation {
+                display: flex;
+                align-items: flex-end;
+                background-color: white;
+                border-radius: 15px;
+                height: 60px;
+                width: 350px;
+                overflow: hidden;
+                opacity: 0;
+                padding: 0 0 0 9px;
+
+                .menuDesc {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    padding: 5px 0 5px 5px;
+                    width: 80%;
+
+                    h4,
+                    p {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+
+                    p {
+                        font-weight: normal;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    font-weight: bold;
+                    padding: 0 5px 5px 0;
+                    width: 20%;
+                }
+
+                .check {
+                    display: inherit;
+                    width: 60px;
+                    height: 100%;
+                    background-color: #99e2d0;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    right: -60px;
+                }
+
+                .fa-circle-check {
+                    display: inherit;
+                    align-items: center;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen AND(min-width:1100px) {
+
+    .menuMain {
+        gap: 176.5px;
+    }
+
+    #menuMain3 {
+        gap: 214px;
+    }
+
+}
