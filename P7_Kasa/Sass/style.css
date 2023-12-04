@@ -1,0 +1,132 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html body:not(footer) {
+  margin: 0 100px;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+html body:not(footer) header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+html body:not(footer) header a {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+html body:not(footer) header nav {
+  display: inherit;
+  align-items: center;
+  flex-flow: row wrap;
+}
+html body:not(footer) header nav ul {
+  display: inherit;
+  gap: 57px;
+}
+html body:not(footer) header nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inherit;
+}
+html body:not(footer) header nav ul li a {
+  color: #FF6060;
+}
+html body:not(footer) main {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  align-items: center;
+  gap: 43px;
+}
+html body:not(footer) main aside {
+  width: 100%;
+  height: 123px;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body:not(footer) main aside figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 123px;
+  overflow: hidden;
+}
+html body:not(footer) main aside figure figcaption {
+  background: black;
+  opacity: 0.3;
+  color: white;
+  font-size: 48px;
+  position: absolute;
+  top: 25%;
+  left: 844px;
+}
+html body:not(footer) main article {
+  display: inherit;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  background-color: #F7F7F7;
+  padding: 56px 0;
+}
+html body:not(footer) main article .cards {
+  background-image: linear-gradient(180deg, rgba(207, 38, 38, 0.767) 0%, rgb(231, 65, 65) 100%);
+  width: 30%;
+  height: 340px;
+}
+html body:not(footer) main article .cards .describCards {
+  display: flex;
+  height: 300px;
+  align-items: flex-end;
+  color: white;
+}
+html body:not(footer) .apropos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html body:not(footer) .apropos .present {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  color: white;
+  width: 70%;
+  height: 50px;
+  padding: 0 18px;
+}
+html body:not(footer) .apropos .present .fa-chevron-down:active p {
+  display: inherit;
+}
+html body:not(footer) .apropos .present p {
+  display: none;
+  background-color: #F7F7F7;
+}
+html body:not(footer) footer {
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+html body:not(footer) footer figure {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+html body:not(footer) footer figure img {
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */
